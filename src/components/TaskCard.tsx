@@ -6,7 +6,7 @@ export function TaskCard() {
   const navigate = useNavigate();
 
   return (
-    <div className="grid grid-cols-1 border rounded-sm  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  w-full h-full">
+    <div className="grid grid-cols-1   sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  w-full h-full">
       {tasks.length >= 1 ? (
         tasks.map((task) => (
           <div
@@ -42,7 +42,7 @@ export function TaskCard() {
         ))
       ) : (
         
-        <div className="text-md">You have no pending tasks</div>
+        <div className="text-xs md:text-base">You have no pending tasks</div>
         
         
       )}
